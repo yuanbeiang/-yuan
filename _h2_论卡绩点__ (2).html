@@ -1,0 +1,42 @@
+<html><head><link rel="stylesheet" type="text/css" href="https://unpkg.com/vditor@3.10.8/dist/index.css"/>
+<script src="https://unpkg.com/vditor@3.10.8/dist/js/i18n/zh_CN.js"></script>
+<script src="https://unpkg.com/vditor@3.10.8/dist/method.min.js"></script></head>
+<body><div class="vditor-reset" id="preview"><h2>论卡绩点</h2>
+<ul>
+<li>
+<p>谢谢你，亲爱的劳动老师，把我的绩点卡在了<em><strong>89</strong></em>分</p>
+</li>
+<li>
+<p>我明白，您受学校的委托，把优秀率控在90%以下，但是你有没有想过，你这样做，可能会导致很多人就因为这么一点学分，丧失了保研的资格</p>
+</li>
+<li>
+<p>谢谢你，没有向学校写申请，我为您的勤奋与守矩感到欣慰</p>
+</li>
+</ul>
+<blockquote>
+<p>我不想多说什么了，付出了这么多最后得到了这么个结果，唉，也怪自己吧</p>
+</blockquote>
+<p><img src="https://raw.github.com/yuanbeiang/-yuan/main/B86C774972285D94ECC099C3F5BD95BF.jpg" alt="" title="其实我们都很弱小呢 无名" /><br />
+<img src="https://raw.github.com/yuanbeiang/-yuan/main/5ce1517c5f851c3b9165873accb64fbf.jpg" alt="" title="这并不意味着我们不能反抗" /></p>
+</div>
+<script>
+    const previewElement = document.getElementById('preview')
+    Vditor.setContentTheme('light', 'https://unpkg.com/vditor@3.10.8/dist/css/content-theme');
+    Vditor.codeRender(previewElement);
+    Vditor.highlightRender({"enable":true,"lineNumber":false,"defaultLang":"","style":"github"}, previewElement, 'https://unpkg.com/vditor@3.10.8');
+    Vditor.mathRender(previewElement, {
+        cdn: 'https://unpkg.com/vditor@3.10.8',
+        math: {"engine":"KaTeX","inlineDigit":false,"macros":{}},
+    });
+    Vditor.mermaidRender(previewElement, 'https://unpkg.com/vditor@3.10.8', 'classic');
+    Vditor.SMILESRender(previewElement, 'https://unpkg.com/vditor@3.10.8', 'classic');
+    Vditor.markmapRender(previewElement, 'https://unpkg.com/vditor@3.10.8');
+    Vditor.flowchartRender(previewElement, 'https://unpkg.com/vditor@3.10.8');
+    Vditor.graphvizRender(previewElement, 'https://unpkg.com/vditor@3.10.8');
+    Vditor.chartRender(previewElement, 'https://unpkg.com/vditor@3.10.8', 'classic');
+    Vditor.mindmapRender(previewElement, 'https://unpkg.com/vditor@3.10.8', 'classic');
+    Vditor.abcRender(previewElement, 'https://unpkg.com/vditor@3.10.8');
+    Vditor.mediaRender(previewElement);
+    Vditor.speechRender(previewElement);
+</script>
+<script src="https://unpkg.com/vditor@3.10.8/dist/js/icons/ant.js"></script></body></html>
